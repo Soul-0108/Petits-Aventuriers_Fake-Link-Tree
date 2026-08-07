@@ -1,0 +1,239 @@
+/*Theme Name : Petits Aventuriers
+Description : page html type link tree pour orienter sur les différents canaux sociaux de l'entreprise Petits Aventurier
+Author : Song Amelie
+Template : none
+Version : 1.0.0
+*/
+
+
+/*--------
+page fonts settings
+paragraphes et liens : LINE Seed JP Regular 400
+--------*/
+@font-face {
+    font-family: 'LINESeedJP-Regular';
+    src: url('./fonts/LINESeedJP-Regular.ttf') format('ttf');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+/*
+--------variables settings--------
+*****fonts, colors & sizes*****
+*/
+
+:root{
+
+    /*fonts*/
+
+    --global-body-font-family:'LINE Seed JP';
+
+    /*colors*/
+
+    --color-backgroung: #fefdf5;
+    --color-button: #fefdf5ef;
+    --color-text: #202d5f;
+    --color-link-hover:#0c9dc4;
+    --button-shadow: 0 5px 5px rgba(32, 45, 95, 0.25);
+
+    /*sizes*/
+
+    --text-link-size: 0.8rem;
+    --button-radius: 100px;
+    --button-width: 600px;
+    --button-height: 80px;
+}
+
+
+/*--------general page style--------*/
+
+body{
+    background-color: var(--color-backgroung);
+    width: 100vh;
+    height: auto;
+    margin: auto;
+}
+
+header{
+    width: 100vh;
+    margin: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    width: 100vh;
+    margin: auto;
+    height: auto;
+    background-image: url(images/favicon_petits_aventuriers.svg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position-x: center;
+    background-position-y: 100px;
+    background-attachment: scroll;
+}
+
+
+/*--------flex--------*/
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.logo{
+    align-self: center;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.baseline{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.liens{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.liens a{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    gap: 1rem;
+    align-self: center;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.background_image{
+    align-self: center;
+}
+
+
+/*--------buttons--------*/
+
+.liens{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.liens a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3rem;
+    height: var(--button-height);
+    width: var(--button-width);
+    padding: 0 2rem;
+    background-color: var(--color-button);
+    border-radius: var(--button-radius);
+    box-shadow: var(--button-shadow);
+    transition: 0.6s ease;
+}
+
+
+/*--------images--------*/
+
+.logo{
+    width: 450px;
+    height: auto;
+}
+.liens img{
+    width: 60px;
+    height: 60px;
+}
+
+
+/*--------texts--------*/
+
+h1, p, a{
+    font-family: var(--global-body-font-family);
+    color: var(--color-text);
+}
+
+h1{
+    text-align: center;
+    font-size: smaller;
+    color: #0c9dc4;
+}
+
+footer p{
+    text-align: center;
+    font-size: smaller;
+}
+
+.baseline p{
+    font-family: var(--global-body-font-family);
+    font-weight: 700;
+    text-align: center;
+    line-height: 1.5;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.liens a{
+    text-decoration: none;
+}
+
+.liens p {
+    text-align: left;
+}
+
+/*animation*/
+.liens a:hover{
+    scale:1.1;
+    box-shadow: 0 7px 7px rgba(32, 45, 95, 0.25);
+    p {
+        color: var(--color-link-hover)
+    };
+}
+
+/*
+--------responsive settings--------
+*****button sizes*****
+*/
+
+/*--------Responsive - Tablets--------*/
+
+@media(max-width: 768px){
+    .liens a{
+        width: 450px;
+        height: 100px;
+    }
+}
+
+/*--------Responsive - Mobile--------*/
+
+@media(max-width: 360px){
+    .liens a{
+        width: 350px;
+        height: 100px;
+    }
+}
