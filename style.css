@@ -53,12 +53,12 @@ body{
     background-color: var(--color-backgroung);
     width: 100vh;
     height: auto;
-    margin: 0;
+    margin: auto;
 }
 
 header{
     width: 100vh;
-    margin: 0;
+    margin: auto;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -66,7 +66,7 @@ header{
 
 main{
     width: 100vh;
-    margin: 0;
+    margin: auto;
     height: auto;
     background-image: url(images/favicon_petits_aventuriers.svg);
     background-repeat: no-repeat;
