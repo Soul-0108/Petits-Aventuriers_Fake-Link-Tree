@@ -206,7 +206,7 @@ footer p{
     text-align: left;
 }
 
-/*animation*/
+/*--------animation--------*/
 .liens a:hover{
     scale:1.1;
     box-shadow: 0 7px 7px rgba(32, 45, 95, 0.25);
