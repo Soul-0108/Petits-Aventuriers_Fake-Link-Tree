@@ -10,13 +10,6 @@ Version : 1.0.0
 page fonts settings
 paragraphes et liens : LINE Seed JP Regular 400
 --------*/
-@font-face {
-    font-family: 'LINESeedJP-Regular';
-    src: url('./fonts/LINESeedJP-Regular.ttf') format('ttf');
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-}
 
 
 /*
@@ -28,7 +21,7 @@ paragraphes et liens : LINE Seed JP Regular 400
 
     /*fonts*/
 
-    --global-body-font-family:'LINE Seed JP';
+    --global-body-font-family:'LINE Seed JP',sans-serif;
 
     /*colors*/
 
@@ -175,6 +168,8 @@ footer{
 
 h1, p, a{
     font-family: var(--global-body-font-family);
+    font-weight: 400;
+    font-style:normal;
     color: var(--color-text);
 }
 
