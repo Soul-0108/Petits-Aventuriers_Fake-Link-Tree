@@ -1,5 +1,5 @@
 /*Theme Name : Petits Aventuriers
-Description : page html type link tree pour orienter sur les différents canaux sociaux de l'entreprise Petits Aventurier
+Description : page html type link tree pour orienter sur les différents canaux sociaux de l'entreprise fictive Petits Aventuriers
 Author : Song Amelie
 Template : none
 Version : 1.0.0
@@ -28,7 +28,7 @@ paragraphes et liens : LINE Seed JP Regular 400
 
     /*fonts*/
 
-    --global-body-font-family:'LINE Seed JP';
+    --global-body-font-family:'LINESeedJP-Regular';
 
     /*colors*/
 
